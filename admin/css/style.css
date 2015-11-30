@@ -1,0 +1,48 @@
+body {
+background-color: black;
+color: white;
+}
+
+nav a{
+color:white;
+}
+
+header nav button a{
+ display: inline; 
+}  
+
+header nav ul li{
+ list-style-type:none; 
+}
+
+.search{
+  margin: 2% 0 0 0;
+  color: blue;
+}
+
+.demande{
+margin: 5% 0 0 0;
+}
+
+.text-demande{
+margin: 5% 0 0 0;
+color: white;
+}
+
+/* Styles pour les tablettes */
+
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
