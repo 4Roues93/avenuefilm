@@ -153,3 +153,7 @@ a.btn-social,
 {
     background-color: #4c70ba;
 }
+
+#page_navigation echo{
+color: white;
+}

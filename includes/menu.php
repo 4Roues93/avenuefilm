@@ -23,7 +23,7 @@
 							<li><a href="dessin_animeF.php">Dessin animé</a></li>
 							<li><a href="horreurF.php">Horreur</a></li>
 							<li><a href="scienceF.php">Science fiction/Fanstastique</a></li>
-							<li><a href="thrillerF.php">Triller</a></li>
+							<li><a href="thrillerF.php">Thriller</a></li>
 							<li><a href="diversF.php">Divers</a></li>
 					</ul>
 		  </li>
@@ -35,7 +35,7 @@
 							<li><a href="comedieS.php">Comedie</a></li>
 							<li><a href="horreurS.php">Horreur</a></li>
 							<li><a href="scienceS.php">Science fiction/Fanstastique</a></li>
-							<li><a href="TrillerS.php">Triller</a></li>
+							<li><a href="TrillerS.php">Thriller</a></li>
 					</ul>
 		  </li>
                     <li>

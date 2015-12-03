@@ -74,7 +74,7 @@ $_SESSION['nom'] = $donnees['nom'];
     </div>
 	
 	</div>
-	<?php include("js/films.js");?>
+	
 
     <div id="page_navigation"> </div>
 </div>

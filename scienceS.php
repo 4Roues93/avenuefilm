@@ -44,7 +44,13 @@
 				<div class="liste">
 		<?php
 			include("admin/includes/bdd.php");
-			$reponse = $bdd->query("SELECT * FROM films WHERE categorie='ScienceS' ORDER BY titre ASC");
+			
+			$nombre_max_page = 3;
+			$depart = 1;
+					if(isset($_GET['p'])){
+						$depart = $_GET['p'];
+					}
+			$reponse = $bdd->query("SELECT * FROM films WHERE categorie='ScienceS' ORDER BY titre ASC LIMIT ".(($depart-1)*$nombre_max_page).",$nombre_max_page" );
 			
 			while($donnees = $reponse->fetch()){
 				 ?>
@@ -70,9 +76,21 @@
     </div>
 	
 	</div>
-	<?php include("js/films.js");?>
 
-    <div id="page_navigation"> </div>
+    <div id="pagination"> 
+	Page :
+		<?php
+			$total_tab = $bdd->query("SELECT COUNT(*) AS total FROM films WHERE categorie='ScienceS' ORDER BY titre ASC");
+			$donnees_total_tab = $total_tab->fetch();
+			$total = $donnees_total_tab['total'];
+		
+			$nombreDePages = ceil($total / $nombre_max_page);
+		
+			for($i = 1; $i <= $nombreDePages; $i++){
+				echo " <a href=\"scienceS.php?p=$i\"> $i - </a>";
+			}
+		?>
+	</div>
 </div>
 
 	
